@@ -25,7 +25,7 @@ a:hover {
 
 .main-nav {
   width: 100%;
-  background: black;
+  background: rgb(255, 255, 255);
   min-height: 30px;
   padding: 10px;
   position: fixed;
@@ -43,7 +43,7 @@ a:hover {
 .nav .name {
     display: block;
     margin-right: auto;
-    color: white;
+    color: rgb(117, 116, 116);
 }
 .nav li {
   padding: 5px 10px 10px 10px;
@@ -57,7 +57,6 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/background.png') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -93,13 +92,20 @@ header .profile-image:hover {
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
-  background: #fff;
-  border-bottom: 4px solid #ccc;
+  background: rgba(143, 148, 143, 0.3);;
+  border: 2px solid #ccc;
   border-radius: 6px;
   transition: all .5s;
+  color: white;
+  fill-opacity: .5;
 }
 .card:hover {
   border-color: #ff99ff;
+}
+
+body {
+  background: url('images/header_background.jpg') no-repeat top center ;
+  background-size: cover;
 }
 
 footer {
