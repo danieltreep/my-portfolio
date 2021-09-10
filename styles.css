@@ -15,7 +15,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #999;
+  color: rgb(211, 211, 211);
 }
 a:hover {
   color: #6633ff;
@@ -25,11 +25,13 @@ a:hover {
 
 .main-nav {
   width: 100%;
-  background: rgb(255, 255, 255);
-  min-height: 30px;
+  background: rgba(0, 0, 0, 0.4);
+  height: 50px;
   padding: 10px;
   position: fixed;
   text-align: center;
+  border-bottom: solid white 1px;
+  z-index: 1;
 }
 .nav {
   display: flex;
@@ -43,7 +45,7 @@ a:hover {
 .nav .name {
     display: block;
     margin-right: auto;
-    color: rgb(117, 116, 116);
+    color: rgb(226, 226, 226);
 }
 .nav li {
   padding: 5px 10px 10px 10px;
@@ -57,64 +59,69 @@ a:hover {
 
 header {
   text-align: center;
-  background-size: cover;
   overflow: hidden;
-  padding-top: 60px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 header {
   line-height: 1.5;
 }
 header .profile-image {
-  margin-top: 50px;
+  margin-top: 100px;
   width: 150px;
   height: 150px;
   border-radius: 10%;
-  border: 3px solid white;
+  border: 2px solid rgb(255, 255, 255);
   transition: all .5s;
 }
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
 }
 .tag {
-  background-color: #efefef;
-  color: black;
+  background-color: rgba(118, 122, 118, 0.2);
+  color: rgb(252, 228, 175);
   padding: 10px;
+  
   border-radius: 5px;
   display: table;
   margin: 10px auto;
 } 
 .location {
   background-color: #222;
-  color: yellow;
+  color: rgb(233, 233, 233);
 }
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
-  max-width: 500px;
+  max-width: 525px;
   text-align: left;
   background: rgba(143, 148, 143, 0.3);
-  border: 2px solid #ccc;
+  border: 2px hidden #ccc;
   border-radius: 6px;
   transition: all .5s;
   color: white;
   fill-opacity: .5;
 }
 .card:hover {
-  border-color: #ff99ff;
   background: rgba(143, 148, 143, 0.2);
 }
-
-/* credit photo: https://wallpapersafari.com/w/qCrgLd */
+.card-list {
+ color: bisque;
+}
+/* credit photo: https://www.wallpaperflare.com/stroke-artwork-abstract-coloured-lines-minimalist-minimalism-wallpaper-mbygi/download/1920x1080 */
 body {
   background: url('images/background.jpg') no-repeat top center ;
   background-size: cover;
 }
 
+h2 {
+  color: rgb(255, 254, 208);
+}
+
 body .piano {
   float: none;
   height: 250px;
-  margin-top: 10px;
-  
+  margin-top: 20px;
 }
 
 footer {
@@ -126,6 +133,7 @@ footer {
 footer .copyright {
   top: -8px;
   font-size: .75em;
+  color: whitesmoke;
 }
 
 footer ul {
@@ -145,7 +153,7 @@ a.social {
   width: 30px;
   height: 30px;
   background-size: 30px 30px;
-  opacity: .4;
+  opacity: .7;
   transition: all .5s;
 }
 a.twitter {
@@ -172,12 +180,13 @@ a.social:hover {
       display: flex; 
       max-width: 1200px;
       -ms-flex-pack: distribute;
-      justify-content: space-around;
+      justify-content: center;
       margin: 0 auto;
+      flex-wrap: wrap;
   }
 
   header {
-    min-height: 470px;
+    min-height: 400px;
   }
 
   .nav {
