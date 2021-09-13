@@ -169,6 +169,10 @@ h2 {
   background-color: rgba(204, 204, 204, 0);
 }
 
+.image-contact {
+  height: 255px;
+}
+
 footer {
   width: 100%;
   min-height: 30px;
